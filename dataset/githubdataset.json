@@ -1,0 +1,30 @@
+{
+	"name": "githubdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServerlinked",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"rel_url": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().rel_url",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
