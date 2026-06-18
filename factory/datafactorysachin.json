@@ -1,0 +1,15 @@
+{
+	"name": "datafactorysachin",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a65d467e-8f81-4c1d-8b97-0e0ebfa010eb",
+		"tenantId": "b6d18ec9-969c-4dc3-aebc-c3e821d1b9a1"
+	}
+}
